@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    background: url("./Imagem/bg-repeat.jpg");
+    background-size: contain;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.mensagem{
+    width: 27rem;
+}
+.mensagem h1, p {
+    color: #fff;
+    max-width: 100%;
+}
+.mensagem h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.mensagem p{
+    text-align: justify;
+    font-size: 22px;
+    font-weight: 400;
+}
+.formulario{
+   width: 500px;
+   background-color: #fff;
+   height: 600px;
+   border-radius: 5px;
+   box-sizing: 3px 3px  10px rgba(0,0,0,0.365);
+   left: 5%;
+   position: relative;
+   display: inline-block;
+   text-align: center;  
+}
+
+.input-padrao {
+    width: 90%;
+    height: 48px;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    
+} 
+.input-padrao:focus-visible {
+    border: 2px solid #fff;
+}
+textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    resize: none;
+    
+}
+#form .validacao {
+    opacity: 0;
+    color: #f00;
+    text-align: left;
+    margin: 0 0 0 27px;
+}
+.mensagem-input {
+   text-align: left;
+   margin: 15px 0 0 20px;
+   color: black;
+}
+#btn-enviar {
+    background: #3CCC87;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+#btn-enviar:hover {
+    transform: scale(1.03);
+}
+
