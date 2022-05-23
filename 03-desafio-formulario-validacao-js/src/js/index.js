@@ -18,6 +18,7 @@ input[1].addEventListener('input', (element)=> {
     if(valueInput == "" || valueInput.indexOf('@') == -1 || valueInput.indexOf('.') == -1 || valueInput.indexOf('.com') == -1){
         mensagemDeValidacao[1].style.opacity = "1"
         element.target.style.border = "2px solid rgba(245, 46, 46, 1)"
+        mensagemDeValidacao[1].textContent = "Digitar um email válido"
     } else {
         mensagemDeValidacao[1].style.opacity = "0"
         element.target.style.border = "2px solid rgba(0, 194, 43, 1)"
