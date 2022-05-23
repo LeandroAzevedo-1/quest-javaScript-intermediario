@@ -5,7 +5,7 @@ const mensagemDeValidacao = document.querySelectorAll('.validacao')
 
 input[0].addEventListener('input', (element) =>{
     const valueInput = element.target.value
-    if(valueInput == ""){
+    if(valueInput == "" ){
         mensagemDeValidacao[0].style.opacity = "1"
         element.target.style.border = "2px solid rgba(245, 46, 46, 1)"
     } else {
@@ -15,7 +15,7 @@ input[0].addEventListener('input', (element) =>{
 })
 input[1].addEventListener('input', (element)=> {
     const valueInput = element.target.value
-    if(valueInput == ""){
+    if(valueInput == "" || valueInput.indexOf('@') == -1 || valueInput.indexOf('.') == -1 || valueInput.indexOf('.com') == -1){
         mensagemDeValidacao[1].style.opacity = "1"
         element.target.style.border = "2px solid rgba(245, 46, 46, 1)"
     } else {
@@ -25,7 +25,7 @@ input[1].addEventListener('input', (element)=> {
 })
 input[2].addEventListener('input', (element)=> {
     const valueInput = element.target.value
-    if(valueInput == ""){
+    if(valueInput == "" ){
         mensagemDeValidacao[2].style.opacity = "1"
         element.target.style.border = "2px solid rgba(245, 46, 46, 1)"
     } else {
